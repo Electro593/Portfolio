@@ -9,6 +9,10 @@
    </head>
    
    <body id="portfolio">
+      <header>
+         <h1>Aria R. Seiler</h1>
+      </header>
+      
       <nav>
          <ul>
             <li><a href="index.html">About</a></li>
@@ -20,23 +24,54 @@
       <main>
          <h1>Projects:</h1>
          
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi quis hendrerit dolor. Odio morbi quis commodo odio aenean. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Sapien pellentesque habitant morbi tristique senectus et netus.</p>
+         <p>I've worked on a number of personal projects over the years, from simple text-based games to bare-metal operating systems. Two of them, Voxarc and ThunderOS,
+            are for the express purpose of learning, but they have all contributed towards my understanding of software and programming.<br>
+            Here's a list of my most significant projects.
+         </p>
          
          <ul id="portfolioItems">
             <li>
+               <h2><a href="https://github.com/Electro593/Portfolio">Portfolio</a></h2>
+               <img src="images/portfolio/Portfolio.png">
+               <p><span>That's this website, if it wasn't obvious.</span><br>
+                  &emsp;As I started sending out applications for college internships, I decided it was a good time to start making a portfolio website. Conveniently enough,
+                  I was taking a web development course at the same time, which helped me get started.</p>
+            </li>
+            <li>
                <h2><a href="https://github.com/Electro593/ThunderOS">ThunderOS</a></h2>
                <img src="images/portfolio/ThunderOS.png">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi quis hendrerit dolor. Odio morbi quis commodo odio aenean. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Sapien pellentesque habitant morbi tristique senectus et netus.</p>
+               <p>&emsp;I started this project with the desire to understand operating systems and how hardware interacts with software, and I wasn't disappointed. This
+                  project has led me through numerous twists, turns, and headaches, from setting interrupts to drawing terminals. It got me familiar with GDB, for
+                  better or worse, as well as QEMU and UEFI.
+               </p>
             </li>
             <li>
                <h2><a href="https://github.com/Electro593/Voxarc">Voxarc</a></h2>
                <img src="images/portfolio/Voxarc.png">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi quis hendrerit dolor. Odio morbi quis commodo odio aenean. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Sapien pellentesque habitant morbi tristique senectus et netus.</p>
+               <p>&emsp;Voxarc is the first large scale learning project I ever undertook, greatly inspired by <a href="https://handmadehero.org">Handmade Hero</a>.
+                  The idea was simple: create a full video game and engine without using <span>any</span> libraries. That is, no engines, no file parsers, no networking
+                  APIs, nothing. The only third-party code I allowed myself to use are those that are required: System APIs (like win32) and graphics APIs (like OpenGL
+                  or Vulkan).<br>
+                  &emsp;It has gone through many, many revisions, with some subsystems having been written from scratch more than 10 times. It includes a custom
+                  asset file format and parser, an efficient 2D binpacker for texture atlases, a <a href="https://github.com/Chlumsky/msdfgen">Multi-Channel Signed
+                  Distance Field</a> glyph generator for fonts, custom heap (block) and stack (linear) memory allocators, and a fully-fledged UI system, with more
+                  features on the way.
+               </p>
+            </li>
+            <li>
+               <h2><a href="https://gist.github.com/Electro593/d3ec30e1a992f87bf1e1c41dcf487f68">Image Editor</a></h2>
+               <img src="images/portfolio/ImageEditor.png">
+               <p>&emsp;I never did make a name for this one. It started as a project for my high school Intro to Computer Science class, and I enjoyed it enough to
+                  do another two rewrites for later years (the classes were rather dry otherwise). It's written in Processing, and has a scrolling filter list with ~20
+                  filters.
+               </p>
             </li>
             <li>
                <h2><a href="https://gist.github.com/Electro593/13df82158d1ac60c1a460ee161993bfb">Legend of Lorefidine</a></h2>
                <img src="images/portfolio/Lorefidine.png">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi quis hendrerit dolor. Odio morbi quis commodo odio aenean. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Sapien pellentesque habitant morbi tristique senectus et netus.</p>
+               <p>&emsp;Legend of Lorefidine (originally named The Quest) is the first of my projects that I consider a full program. Written in Python, it has text-based
+                  input, a color-coded graphical map, and a text log. It's undergone two revisions so far, though I plan to update it again.
+               </p>
             </li>
          </ul>
       </main>
